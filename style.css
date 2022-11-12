@@ -1,0 +1,67 @@
+.skills{
+width: 600px;
+margin: auto;
+border: 1px solid #ccc;
+padding: 10px;
+}
+.container{
+    width: 100%;
+    background-color: #139999;
+}
+.habilidades{
+    text-align: right;
+    padding: 10px;
+    color: #aaa;
+    font-weight: bold;
+
+    }
+.html{
+    background-color: #02ffee;
+    animation: fillhtml 2s forwards;
+}
+.css{
+    background-color: #00e0d1;
+    animation: fillcss 2s forwards;
+}
+.python{
+    background-color: #00cec0;
+    animation: fillpython 2s forwards;
+}
+.github{
+    background-color: #00afa4;
+    animation: fillgithub 2s forwards;
+}
+.redhat{
+    background-color: #00665f;
+    animation: fillredhat 2s forwards;
+}
+.bluehat{
+    background-color: #00312e;
+    animation: fillbluehat 2s forwards;
+}
+
+@keyframes fillhtml{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+@keyframes fillcss{
+    0%{width: 0;}
+    100%{width: 80%;}
+}
+@keyframes fillpython{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+@keyframes fillgithub{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+@keyframes fillredhat{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+@keyframes fillbluehat{
+    0%{width: 0;}
+    100%{width: 80%;}
+}
+
