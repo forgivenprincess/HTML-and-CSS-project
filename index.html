@@ -28,7 +28,7 @@
       <div>
         <img class="navbar--logo" src="media/banner.png" alt="Logo header">
       </div>
-      <div class=" dropdown-top">
+      <div class="dropdown-top">
         <div class="dropdown-top-button">Go to</div>
         <div class="dropdown-top-content">
           <a class="nav-link" href="#AboutFP" id="nav-link-about">About Forgiven Princess</a>
@@ -115,7 +115,7 @@
         </div>
 
         <label for=""><h2>Enter your GitHub tag</h2></label>
-        <input id="gitHub" name="gitHub" type="text" placeholder="@username" pattern="^@[^\s]+" required="">
+        <input id="POST-gitHub" name="gitHub" type="text" placeholder="@username" pattern="^@[^\s]+" maxlength="32" required>
         </fieldset>
       </article>
     </section>
@@ -125,16 +125,15 @@
         <h1>Get in touch</h1>
         <form action="">
           <label for="POST-name">Name:</label>
-          <input id="POST-name" type="text" pattern="^@[^\s]+" name="name"><br>
-          <label for="POST-name">Surname:</label>
-          <input id="POST-name" type="text" name="surname"><br>
-          <label for="POST-name">Phone number:</label>
-          <input id="POST-name" type="tel" name="phone"><br>
+          <input id="POST-name" type="text" pattern="[A-Za-z]{2-32}" placeholder="Spongebob" name="name" minlenght="2" maxlength="32"  required ><br>
+          <label for="POST-surname">Surname:</label>
+          <input id="POST-surname" type="text" name="surname" pattern="[A-Za-z]{2-64}" placeholder="Squarepants" minlenght="2" maxlength="64"  required><br>
+          <label for="POST-phone">Phone number:</label>
+          <input id="POST-phone" type="tel" name="phone" pattern="++[0-9]{8,14}" placeholder="+00000000000" minlength="8" maxlength="14" required><br>
           <label for="info"><h2>Tell me more about what you need:</h2></label>
           <br>
-          <textarea required="" id="info" name="info" type="text" maxlength="180"
-            style="height: 100px; width: 250px; ">Write up to 180 characters.</textarea>
-          <input type="submit" value="Save">
+          <textarea required id="info" name="info" type="text" maxlength="180" style="height: 100px; width: 250px;"> Write up to 180 characters.</textarea>
+          <input type="submit" value="Save" style="background-color: rgb(28, 0, 104); color:burlywood; font-weight: bolder;">
         </form>
       </article>
     </section>

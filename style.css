@@ -1,7 +1,44 @@
 /* 
-MOBILE FIRST DESIGN -- media queries can be found at the end of the styles 
+MOBILE FIRST DESIGN -- media queries 
 */
-
+@media screen and (max-width: 576px) {
+    .dropdown-top {
+      display: none; 
+    }
+    .dropdown-top:hover .dropdown-top-content {
+        display: none;
+    }
+    body {
+        margin: 0 0 0 0;
+        background: rgb(5, 0, 89);
+        background: linear-gradient(90deg, rgba(5, 0, 89, 1) 0%, rgba(121, 9, 9, 1) 55%, rgba(255, 0, 0, 1) 100%);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        font-size: 18px;
+        color: antiquewhite;
+    }
+    
+    main {
+        margin: auto 0.8em auto 0.8em;
+    }
+  }
+  
+@media screen and (min-width: 992px) {
+    .dropdown-top .link:hover {
+      color: red;
+    }
+    body {
+        margin: 0 0 0 0;
+        background: rgb(5, 0, 89);
+        background: linear-gradient(90deg, rgba(5, 0, 89, 1) 0%, rgba(121, 9, 9, 1) 55%, rgba(255, 0, 0, 1) 100%);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        font-size: 18px;
+        color: antiquewhite;
+    }
+    
+    main {
+        margin: auto 0.8em auto 0.8em;
+    }
+}
 /* 
 GENERAL SETTINGS 
 */
@@ -52,6 +89,7 @@ p {
 .dropdown-top-button {
     width: 10%;
     height: 15px;
+    flex-wrap: wrap;
     padding: 1em 1em 1em 1em;
     outline: 8px ridge rgba(76, 0, 109, 0.637);
     background-color:#000000;
@@ -65,8 +103,12 @@ p {
     transition: 0.3s;
 
 }
+.dropdown-top:hover .dropdown-top-content {
+    display: block;
+}
 .dropdown-top-content {
     width: 15%;
+    display: none;
     position: absolute;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.521);
