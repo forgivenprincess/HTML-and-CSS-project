@@ -1,42 +1,172 @@
+
+/* 
+MOBILE FIRST DESIGN -- media queries can be found at the end of the styles 
+*/
+
+/* 
+GENERAL SETTINGS 
+*/
+
+body {
+    margin: 0 0 0 0;
+    background: rgb(5,0,89);
+    background: linear-gradient(90deg, rgba(5,0,89,1) 0%, rgba(121,9,9,1) 55%, rgba(255,0,0,1) 100%); 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+main {
+    margin: auto 0.8em auto 0.8em;
+}
+
+footer {
+    height: 5em;
+    width:100%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* define colours and sizes by level*/
+h1 {
+    color: burlywood;
+    font-size: 20px;
+}
+h2 {
+    color: bisque;
+    font-size: 16px;
+}
+p {
+     color: antiquewhite;
+     font-size: 14px;
+}
+
+/* 
+TOP NAV BAR
+*/
+
+.top-bar {
+    display: inline-block;
+    justify-content: right;
+    flex-wrap: nowrap;
+    position: -webkit-fixed;
+	position: fixed;
+	top: 0;
+     padding: 1em 0.5em;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.logo-area span {
+    font-size: 1em;
+}
+
+.logo-area img {
+    height: 3em;
+}
+
+.dropdown-top-button {
+    width: 10vw;
+    height: 0.5vw;
+    padding: 1em 0 1em 0em;
+    outline: 8px ridge rgba(76, 0, 109, 0.637);
+    margin-left: 3px;
+    border-radius: 2rem;
+    font-size: 0.9em;
+}
+.dropdown-top-button:hover{
+    background-color: #2d3875;
+    transition: 0.3s;
+   
+}
+
+.dropdown-top:hover .dropdown-top-content {
+    display: block;
+}
+
+.dropdown-top-content {
+    width: 30vw;
+    display: none;
+    position: absolute;
+    background-color:blanchedalmond;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-top-content > a {
+    background-color: rgba(147, 116, 231, 0.349);
+    border-radius: 4px;
+    margin: 0.5em;
+    padding: 0.5em 1.1em;
+    display: block;
+    color: rgba(255, 255, 255, 0.507);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-top-content > a:nth-child(1):hover {
+    background-color: rgb(68, 21, 177);
+    transition: 0.3s;
+
+}
+
+.dropdown-top-content > a:nth-child(2):hover {
+    background-color: rgb(97, 20, 197);
+    transition: 0.3s;
+
+}
+
+.dropdown-top-content > a:nth-child(3):hover {
+    background-color: rgb(115, 44, 228);
+    transition: 0.3s;
+}
+
+/*Define sections on the ks*/
+
 .skills{
     width: 600px;
-    margin: auto;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(22, 52, 53);
     padding: 10px;
 }
 .container{
      width: 100%;
-    background-color: #acacac;
+    background-color: #000000;
 }
 .habilidades{
     text-align: left;
     padding: 10px;
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
         }
 .html{
-    background-color: #02ffee;
+    background-color: #aaaaaa;
     animation: fillhtml 2s forwards;
 }
 .css{
-    background-color: #00e0d1;
+    background-color: #a1a1a1;
     animation: fillcss 2s forwards;
 }
 .python{
-    background-color: #00cec0;
+    background-color: #858585;
     animation: fillpython 2s forwards;
 }
 .github{
-    background-color: #00afa4;
+    background-color: #646464;
     animation: fillgithub 2s forwards;
 }
 .redhat{
-    background-color: #00665f;
+    background-color: #525151;
     animation: fillredhat 2s forwards;
 }
 .bluehat{
-    background-color: #00312e;
+    background-color: #2b2b2b;
     animation: fillbluehat 2s forwards;
+    align-self: left;
 }
 
 @keyframes fillhtml{
