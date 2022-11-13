@@ -1,20 +1,19 @@
 .skills{
-width: 600px;
-margin: auto;
-border: 1px solid #ccc;
-padding: 10px;
+    width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 .container{
-    width: 100%;
-    background-color: #139999;
+     width: 100%;
+    background-color: #acacac;
 }
 .habilidades{
-    text-align: right;
+    text-align: left;
     padding: 10px;
-    color: #aaa;
+    color: white;
     font-weight: bold;
-
-    }
+        }
 .html{
     background-color: #02ffee;
     animation: fillhtml 2s forwards;
