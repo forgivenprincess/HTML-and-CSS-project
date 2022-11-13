@@ -35,20 +35,20 @@ h1 {
 
 h2 {
     color: bisque;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 p {
-    color: antiquewhite;
-    font-size: 14px;
+    color: rgb(255, 211, 153);
+    font-size: 16px;
 }
-
+/*define class for footer logo*/
 .logofooter {
     width: 20%;
     height: auto;
     outline: 3px solid 6rem #ffffff;
 }
-
+/*define dropdown menu*/
 .dropdown-top-button {
     width: 10%;
     height: 15px;
@@ -57,52 +57,51 @@ p {
     background-color:#000000;
     border-radius: 1rem;
     font-size: 1em;
+    text-align: center;
     font-weight: bolder;
 }
-
 .dropdown-top-button:hover {
-    background-color: #2d3875;
+    background-color: #440000;
     transition: 0.3s;
 
 }
-
-.dropdown-top:hover .dropdown-top-content {
-    display: block;
-}
-
 .dropdown-top-content {
-    width: 20%;
-    display: none;
+    width: 15%;
     position: absolute;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.521);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
     border-radius: 0 0 4px 4px;
 }
-
 .dropdown-top-content>a {
     background-color: rgb(27, 0, 100);
     border-radius: 4px;
     margin: 0.5em;
     padding: 0.5em 1.1em;
     display: block;
-    color: rgba(255, 255, 255, 0.507);
+    color: rgb(245, 218, 142);
     text-decoration: none;
     font-size: 16px;
 }
-
 .dropdown-top-content>a:nth-child(1):hover {
-    background-color: rgb(68, 21, 177);
+    background-color: rgb(115, 44, 228);
     transition: 0.3s;
 
 }
-
 .dropdown-top-content>a:nth-child(2):hover {
-    background-color: rgb(97, 20, 197);
+    background-color: rgb(115, 44, 228);
     transition: 0.3s;
 
 }
-
 .dropdown-top-content>a:nth-child(3):hover {
+    background-color: rgb(115, 44, 228);
+    transition: 0.3s;
+}
+.dropdown-top-content>a:nth-child(4):hover {
+    background-color: rgb(115, 44, 228);
+    transition: 0.3s;
+}
+.dropdown-top-content>a:nth-child(5):hover {
     background-color: rgb(115, 44, 228);
     transition: 0.3s;
 }
@@ -111,49 +110,51 @@ p {
 
 .skills {
     width: 90%;
-    border: 1px solid rgb(22, 52, 53);
+    border: 3px ridge 3rem rgb(22, 52, 53);
+    border-radius: 3rem;
     padding: 10px;
 }
 
 .container {
     width: 30%;
     background-color: #000000;
+    border-radius: 3rem;
 }
 
 .habilidades {
     text-align: left;
     padding: 10px;
-    color: whitesmoke;
-    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
 }
 
 .html {
-    background-color: #aaaaaa;
+    background-color: #ffdea2;
     animation: fillhtml 2s forwards;
 }
 
 .css {
-    background-color: #a1a1a1;
+    background-color: #ffc788;
     animation: fillcss 2s forwards;
 }
 
 .python {
-    background-color: #858585;
+    background-color: #ffc965;
     animation: fillpython 2s forwards;
 }
 
 .github {
-    background-color: #646464;
+    background-color: #ffc46c;
     animation: fillgithub 2s forwards;
 }
 
 .redhat {
-    background-color: #525151;
+    background-color: #ff9c2a;
     animation: fillredhat 2s forwards;
 }
 
 .bluehat {
-    background-color: #2b2b2b;
+    background-color: #ff8800;
     animation: fillbluehat 2s forwards;
     align-self: left;
 }
