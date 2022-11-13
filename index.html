@@ -67,27 +67,40 @@
     </div>
   <hr/>
     <h2>How did we meet?</h2>
-    <fieldset>
-      <input type="radio" name="college" />College
-      <input type="radio" name="keepCoding" />Keepcoding kick-off
-      <input type="radio" name="school" />School
-      <input type="radio" name="gitHub" />GitHub
-      <hr />
+    <div class="row-question">
+      <label class="questions" for="meet"></label>
+    </div>
+    <div>
+      <ul>
+          <li class="answer-li">
+              <input type="radio" name="meet" value="cole" required=""><label class="small-text">School</label>
+          </li>
+          <li class="answer-li">
+              <input type="radio" name="meet" value="uni"><label class="small-text">College</label>
+          </li>
+          <li class="answer-li">
+              <input type="radio" name="meet" value="kcko"><label class="small-text">KeepCoding kick-off</label>
+          </li>
+          <li class="answer-li">
+            <input type="radio" name="meet" value="gh"><label class="small-text">GitHub</label>
+        </li>
+      </ul>
+    </div>
 
       <label for="">Enter your GitHub tag</label>
-      <input id="gitHub" name="gitHub" type="text" placeholder="@username" pattern="^@[^\s]+">
+      <input id="gitHub" name="gitHub" type="text" placeholder="@username" pattern="^@[^\s]+" required="">
     </fieldset>
     <h2>Get in touch</h2>
     <fieldset>
       
       <label for="">Name</label>
-      <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Spongebob" required>
+      <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Spongebob" required="">
       <br>
       <label for="">Surname</label>
-      <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Squarepants" required>
+      <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Squarepants" required="">
       <br>
       <label for="">Telephone number</label>
-      <input required id="phoneNumber" name="phoneNumber" type="tel" placeholder="+XXX00000000" minlength="10" />
+      <input required id="phoneNumber" name="phoneNumber" type="tel" placeholder="+XXX00000000" minlength="10" required="">
       <br>
     <hr/>
         <label for="bio">Tell me more about what you need:</label>
@@ -153,6 +166,7 @@
           <use xlink:href="#svg--twitter"/>
         </svg>
         <svg role="presentation" class="svg--icon">
+          <a class="link" href="https://www.google.com" target="_blank"></a>
           <use xlink:href="#svg--google" />
         </svg>
         <svg role="presentation" class="svg--icon">
@@ -178,3 +192,7 @@
 </body>
 
 </html>
+
+
+
+
