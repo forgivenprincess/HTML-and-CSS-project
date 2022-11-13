@@ -28,9 +28,9 @@
           <img class="navbar--logo" src="media/banner.png" alt="Logo header">
       </div>
         <div class=" dropdown-top">
-          <div class="dropdown-top-button">   Go to </div>
+          <div class="dropdown-top-button">Go to</div>
           <div class="dropdown-top-content">
-            <a class="nav-link" href="#AboutFP" id="nav-link-about">About ForgivenPrincess</a>
+            <a class="nav-link" href="#AboutFP" id="nav-link-about">About Forgiven Princess</a>
             <a class="nav-link" href="#Skills" id="nav-link-skills">Skills</a>
             <a class="nav-link" href="#Wemet" id="nav-link-met">How did we met?</a>
             <a class="nav-link" href="#Contact" id="nav-link-contact">Get in touch</a>
@@ -119,21 +119,19 @@
   <section id="Contact" class="section">
     <article>
     <h2>Get in touch</h2>
-    <fieldset>
-            <label for="">Name</label>
-      <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Spongebob" required="">
-      <br>
-      <label for="">Surname</label>
-      <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Squarepants" required="">
-      <br>
-      <label for="">Telephone number</label>
-      <input required id="phoneNumber" name="phoneNumber" type="tel" placeholder="+XXX00000000" minlength="10" required="">
-      <br>
-    <hr/>
-        <label for="bio">Tell me more about what you need:</label>
+    <form action="">
+      <label for="POST-name">Name:</label>
+      <input id="POST-name" type="text" name="name"><br>
+      <label for="POST-name">Surname:</label>
+      <input id="POST-name" type="text" name="surname"><br>
+      <label for="POST-name">Phone number:</label>
+      <input id="POST-name" type="tel" name="phone"><br>
+      <input type="submit" value="Save">
+    </form>
+    
+        <label for="info">Tell me more about what you need:</label>
       <br><br>
-      <textarea required id="bio" aria-setsize="180">
-      </textarea>
+      <textarea required="" id="info" name="info" type="text" maxlength="180" style="height: 100px; width: 250px; ">Write up to 180 characters.</textarea>
     </fieldset>
 
     <input type="button" value="Save" />
@@ -154,10 +152,10 @@
       2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 
       0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z" />
       </symbol>
-      <symbol id="svg--google" viewbox="-13 -13 72 72">
-        <path d="M48,22h-5v-5h-4v5h-5v4h5v5h4v-5h5 M16,21v6.24h8.72c-0.67,3.76-3.93,6.5-8.72,6.5c-5.28,0-9.57-4.47-9.57-9.75
-  s4.29-9.74,9.57-9.74c2.38,0,4.51,0.82,6.19,2.42v0.01l4.51-4.51C23.93,9.59,20.32,8,16,8C7.16,8,0,15.16,0,24s7.16,16,16,16
-  c9.24,0,15.36-6.5,15.36-15.64c0-1.17-0.11-2.29-0.31-3.36C31.05,21,16,21,16,21z" />
+      <symbol id="svg--linkedin" viewBox="-2 -5 30 30">
+        <path
+        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 
+        0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
       </symbol>
       <symbol id="svg--facebook" viewbox="0 -7 16 30">
         <path
@@ -192,25 +190,36 @@
 
     <div class="wrapper">
       <div class="connect">
-        <svg role="presentation" class="svg--icon">
+        <a class="link" href="https://www.twitter.com" target="_blank">
+          <svg role="presentation" class="svg--icon">
           <use xlink:href="#svg--twitter"/>
         </svg>
-        <svg role="presentation" class="svg--icon">
-          <a class="link" href="https://www.google.com" target="_blank"></a>
-          <use xlink:href="#svg--google" />
-        </svg>
+        </a>
+        <a class="link" href="https://www.facebook.com" target="_blank">
         <svg role="presentation" class="svg--icon">
           <use xlink:href="#svg--facebook" />
         </svg>
+        </a>
+        <a class="link" href="https://www.github.com/forgivenprincess" target="_blank">
         <svg role="presentation" class="svg--icon">
           <use xlink:href="#svg--github" />
         </svg>
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/amelia-p%C3%A9rez-sarmiento-209823127/" target="_blank">
+          <svg role="presentation" class="svg--icon">
+            <use xlink:href="#svg--linkedin" />
+          </svg>
+          </a>
+        <a class="link" href="https://www.pinterest.com" target="_blank">
         <svg role="presentation" class="svg--icon">
           <use xlink:href="#svg--pinterest" />
         </svg>
+        </a>
+        <a class="link" href="https://www.youtube.com" target="_blank">
         <svg role="presentation" class="svg--icon">
           <use xlink:href="#svg--youtube" />
         </svg>
+        </a>
       </div>
     </div>
 <hr/>
