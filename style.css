@@ -20,9 +20,9 @@ main {
 }
 
 footer {
-    height: 5em;
+    height: auto;
     width: 100%;
-    margin-top: 1em;
+    margin-top: 0.3em;
     margin-bottom: 0;
     text-align: center;
 }
@@ -41,6 +41,12 @@ h2 {
 p {
     color: antiquewhite;
     font-size: 14px;
+}
+
+.logofooter {
+    width: 20%;
+    height: auto;
+    outline: 3px solid 6rem #ffffff;
 }
 
 .dropdown-top-button {
