@@ -110,13 +110,13 @@ p {
 /*Define sections on the ks*/
 
 .skills {
-    width: 600px;
+    width: 90%;
     border: 1px solid rgb(22, 52, 53);
     padding: 10px;
 }
 
 .container {
-    width: 100%;
+    width: 30%;
     background-color: #000000;
 }
 
