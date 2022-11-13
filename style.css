@@ -44,7 +44,7 @@ p {
 }
 
 .dropdown-top-button {
-    width: 50px;
+    width: 10%;
     height: 15px;
     padding: 1em 1em 1em 1em;
     outline: 8px ridge rgba(76, 0, 109, 0.637);
@@ -65,7 +65,7 @@ p {
 }
 
 .dropdown-top-content {
-    width: 30vw;
+    width: 20%;
     display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.521);
