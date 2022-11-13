@@ -43,41 +43,15 @@ p {
     font-size: 14px;
 }
 
-/* 
-TOP NAV BAR
-*/
-
-.top-bar {
-    display: flex;
-    flex-wrap: nowrap;
-    position: -webkit -static;
-    position: top right;
-    top: 0;
-    padding: 1em 0.5em;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    column-gap: 1em;
-}
-
-.logo-area span {
-    font-size: 1em;
-}
-
-.logo-area img {
-    height: 3em;
-}
-
 .dropdown-top-button {
-    width: 10vw;
-    height: 0.5vw;
-    padding: 1em 0 1em 0em;
+    width: 50px;
+    height: 15px;
+    padding: 1em 1em 1em 1em;
     outline: 8px ridge rgba(76, 0, 109, 0.637);
-    margin-left: 3px;
-    border-radius: 2rem;
-    font-size: 0.9em;
+    background-color:#000000;
+    border-radius: 1rem;
+    font-size: 1em;
+    font-weight: bolder;
 }
 
 .dropdown-top-button:hover {
@@ -94,13 +68,13 @@ TOP NAV BAR
     width: 30vw;
     display: none;
     position: absolute;
-    background-color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.521);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
     border-radius: 0 0 4px 4px;
 }
 
 .dropdown-top-content>a {
-    background-color: rgba(147, 116, 231, 0.349);
+    background-color: rgb(27, 0, 100);
     border-radius: 4px;
     margin: 0.5em;
     padding: 0.5em 1.1em;

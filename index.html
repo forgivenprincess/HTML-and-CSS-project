@@ -6,38 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forgiven Princess - Webdesign made easy</title>
-
+    <style>
+        .gfg {
+            width:auto;
+            text-align:center;
+            padding:20px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main>
-    <div class="top-bar">
-      <div class=" dropdown-top">
-        <div class="dropdown-top-button">   Go to </div>
-        <div class="dropdown-top-content">
-          <a class="enlace" href="">About ForgivenPrincess</a>
-          <a class="enlace" href="">Contact</a>
-          <a class="enlace" href="">How did we meet?</a>
-          <a class="enlace" href="">Get in touch</a>
-          <a class="enlace" href="">Social media</a>
+  <header>
+    <div class="navbar">
+      <div>
+          <img class="navbar--logo" src="media/banner.png" alt="Logo header">
+      </div>
+        <div class=" dropdown-top">
+          <div class="dropdown-top-button">   Go to </div>
+          <div class="dropdown-top-content">
+            <a class="nav-link" href="#AboutFP" id="nav-link-about">About ForgivenPrincess</a>
+            <a class="nav-link" href="#Skills" id="nav-link-skills">Skills</a>
+            <a class="nav-link" href="#Wemet" id="nav-link-met">How did we met?</a>
+            <a class="nav-link" href="#Contact" id="nav-link-contact">Get in touch</a>
+            <a class="nav-link" href="#Social" id="nav-link-social">Social media</a>
         </div>
       </div>
-    </div>
-    </div>
-    <header>
-      <div class="navbar">
-        <div>
-            <img class="navbar--logo" src="media/banner.png" alt="Logo header">
-        </div>
-    </header>
-   <hr> <h2>About ForgivenPrincess</h2>
+      </div>
+  </header>
+
+
+  <main>
+
+    <section id="AboutFP" class="section">
+      <article>
+   <h2>About ForgivenPrincess</h2>
    <p>ForgivenPrincess is the alter name for Amelia Pérez Sarmiento. She's a developer/ethical hacker based in Spain. </p>
    <p>I'm currently studying a Web development Bootcamp in KeepCoding, sponsored by Glovo. This iniciative gave the opportunity to learn how to program to over 200 women from all around the globe.</p>
     <p> This is the site I created for the HTML and CSS module practice.</p>
     <p>On this site you may find a little prospect about my skills and a contact form.</p>
-  </hr>
-  <hr>
+    <hr>
+  </article>
+  </section>
+  
+  <section id="Skills" class="section">
+    <article>
     <h2>My skills</h2>
     <div class="habilidades">
       <p>HTML</p>
@@ -66,7 +84,12 @@
       </div>
     </div>
   <hr/>
-    <h2>How did we meet?</h2>
+  </article>
+</section>
+
+<section id="Wemet" class="section">
+  <article>
+    <h2>How did we met?</h2>
     <div class="row-question">
       <label class="questions" for="meet"></label>
     </div>
@@ -90,10 +113,14 @@
       <label for="">Enter your GitHub tag</label>
       <input id="gitHub" name="gitHub" type="text" placeholder="@username" pattern="^@[^\s]+" required="">
     </fieldset>
+    </article>
+  </section>
+
+  <section id="Contact" class="section">
+    <article>
     <h2>Get in touch</h2>
     <fieldset>
-      
-      <label for="">Name</label>
+            <label for="">Name</label>
       <input type="text" maxlength="32" name="first_name" pattern="[A-Za-z]{1,32}" placeholder="Spongebob" required="">
       <br>
       <label for="">Surname</label>
@@ -111,10 +138,13 @@
 
     <input type="button" value="Save" />
     <input type="button" value="Clear form" />
-    </form>
+    </article>
+  </section>
   </main>
 
   <footer>
+    <section id="Social" class="section">
+      <article>
     <svg class="svg--source">
       <symbol id="svg--twitter" viewbox="0 -7 15 30">
         <path
@@ -188,6 +218,8 @@
     <p>Freshly developed by ForgivenPrincess</p>
     <p>Amelia Pérez Sarmiento. 2022.</p>
     <p>All rights reserved.</p>
+    </article>
+    </section>
   </footer>
 </body>
 
